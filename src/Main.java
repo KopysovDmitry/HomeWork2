@@ -35,10 +35,7 @@ public class Main {
 
             System.out.print(numbers[i]+",");}
         System.out.print(numbers_1[0]);
-
         System.out.println(" ");
-
-
         double[] num_1 = {1.57,7.654,9.986};
         int d_1= num_1.length;
         while (d_1>1){
