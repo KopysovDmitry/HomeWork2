@@ -1,65 +1,57 @@
 package ru.skyeng;
 
+import java.util.Arrays;
+
 public class Main {
 
     public static void main(String[] args) {
 
-        double dog = 8;
-        System.out.println(dog);
-        var cat = 3.6;
-        System.out.println(cat);
-        var paper = 763789;
-        System.out.println(paper);
-        dog = dog + 4;
-        System.out.println(dog);
-        cat = cat + 4;
-        System.out.println(cat);
-        paper = paper + 4;
-        System.out.println(paper);
-        System.out.println("Задача №2");
-        dog = dog - 3.5;
-        System.out.println(dog);
-        cat = cat - 1.6;
-        System.out.println(cat);
-        paper = paper - 7639;
-        System.out.println(paper);
-        System.out.println("Задача №3");
-        var friend = 19;
-        System.out.println(friend);
-        friend = friend + 2;
-        System.out.println(friend);
-        friend = friend / 4;
-        System.out.println(friend);
-        System.out.println("Задача №4");
-        var frog = 3.5;
-        System.out.println(frog);
-        frog = frog * 10;
-        System.out.println(frog);
-        frog = frog / 3.5;
-        System.out.println(frog);
-        frog = frog + 4;
-        System.out.println(frog);
-        System.out.println("Задача №4");
-        var boxer1Weight = 78.2;
-        System.out.println(boxer1Weight);
-        var boxer2Weight = 82.7;
-        System.out.println(boxer2Weight);
-        var AllBoxersWeight = boxer1Weight + boxer2Weight;
-        System.out.println("Сумма веса обоих боксеров равна "+ AllBoxersWeight + " Кг!");
-        var BoxersDifference = (boxer2Weight + boxer1Weight) % boxer1Weight;
-        System.out.println("Разница между боксерами равна " + BoxersDifference + " Кг!");
-        System.out.println("Задача №5");
-        System.out.println("боксер 2 тяжелее боксера 1 на " + (boxer2Weight - boxer1Weight) +" кг!");
-        System.out.println("боксер 2 тяжелее боксера 1 на " + (boxer2Weight + boxer1Weight) % boxer1Weight +" кг!");
-        System.out.println("Задача №7");
-        var AllTimeWorkers = 640;
-        var TimeOfDayWorker = 8;
-        var NumberOfWorkers = AllTimeWorkers/TimeOfDayWorker;
-        System.out.println("Колчичество работников " + NumberOfWorkers);
-        NumberOfWorkers = NumberOfWorkers +94;
-        AllTimeWorkers = NumberOfWorkers * TimeOfDayWorker;
-        System.out.println("Если в компании работает " + NumberOfWorkers + " человек, то всего "  + (TimeOfDayWorker * NumberOfWorkers) +" часов работы может быть поделено между сорудниками");
-        System.out.println("___________");
+        int[] numbers = new int [3];
+        int i =0;
+        while (i<numbers.length-1){
+            i=i+1;
+            numbers[i] = i;
+            System.out.print(numbers[i]+",");}
+            System.out.print(numbers.length);
+        System.out.println(" ");
 
+        double[] num = {1.57,7.654,9.986};
+        int d=-1;
+        while (d < num.length-(num.length-1)){
+            d=d+1;
+            System.out.print(num[d]+",");}
+        System.out.print(num[num.length-1]);
+        System.out.println(" ");
+
+        int [] integers = {1,2,3,4,5,6,7,8,9,10};
+        for (int ii = 0; ii<integers.length-1; ii++) {
+            System.out.print(integers[ii]+",");}
+            System.out.println(integers[9]);
+
+        int[] numbers_1 = new int [3];
+        int i_1 =numbers_1.length-1;
+        for (i_1=numbers_1.length-1; i_1>0; i_1=i_1-1){
+            numbers_1[i_1]=i_1+1;
+
+            System.out.print(numbers[i]+",");}
+        System.out.print(numbers_1[0]);
+
+        System.out.println(" ");
+
+
+        double[] num_1 = {1.57,7.654,9.986};
+        int d_1= num_1.length;
+        while (d_1>1){
+            d_1=d_1-1;
+            System.out.print(num_1[d_1]+",");}
+        System.out.print(num_1[0]);
+        System.out.println(" ");
+
+        int [] integers_1 = {1,2,3,4,5,6,7,8,9,10};
+        int ii = integers_1.length;
+        while (ii>1){
+            ii=ii-1;
+        System.out.print(integers_1[ii]+",");}
+        System.out.print(integers_1[0]);
     }
 }
